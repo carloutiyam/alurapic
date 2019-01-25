@@ -1,9 +1,4 @@
-<app-photo
-url="https://i.ytimg.com/vi/WLg-yS2VoEk/maxresdefault.jpg" 
-desc="pogba monstro"
-></app-photo>
-
-<app-photo
-url="https://i.ytimg.com/vi/OKHynGoctbQ/maxresdefault.jpg" 
-desc="fabinho destruidor"
+<app-photo *ngFor="let p of photos"
+[url]="p.url" 
+[desc]="p.description"
 ></app-photo>
